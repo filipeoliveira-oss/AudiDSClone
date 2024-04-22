@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'AudiType';
+    src: url('../../assets/fonts/AudiType/auditype_extendednormal.ttf');
+}
+
+.AudiButton{
+    all: unset;
+    min-width: 13rem;
+    max-width: 26rem;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 1em 0;
+    font-family: 'AudiType';
+    transition: all 250ms cubic-bezier(.75,.02,.5,1);
+}
+
+.AudiButton:hover, .AudiButtonIcon:hover{
+    opacity: 0.7;
+}
+/*PRIMARY BUTTON*/
+.AudiButton-primary{
+    background-color: black;
+    color: #ffffff;
+}
+
+/*SECONDARY BUTTON*/
+.AudiButton-secondary{
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000;
+}
+
+
+/*TEXT BUTTON*/
+.AudiButton-text{
+    background-color: transparent;
+    color: #000000;
+}
+
+.AudiButton-text > span{
+    margin-left: 5px;
+    display: inline-flex;
+}
+
+/* CRIAR EFEITO DE HOVER */
+.AudiButton-text:hover > span {
+    /* transform: translateX(50px); */
+}
+
+.AudiButtonIcon{
+    all: unset;
+    cursor: pointer;
+}
+
+
+
+.buttonIconWrapper{
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*STRETCHED  BUTTON*/
+.AudiButton-stretched{
+    background-color: #000000;
+    width: 80vw;
+    max-width: 767px;
+    color: #ffffff;
+}
