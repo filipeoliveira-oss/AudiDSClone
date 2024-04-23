@@ -8,3 +8,9 @@ To run this project, you first need to:
 - To see the Storybook preview just run `npm run storybook`
 
 In Storybook document, you will find all the components available so far
+
+Access the link to if you wish to only see the [Storybook](https://audi-ds-clone-pyiiavawx-filipeoliveiraoss-projects.vercel.app/?path=/docs/configure-your-project--docs)
+<br/>
+<br/>
+
+###### Please, be aware that this project is still under development
