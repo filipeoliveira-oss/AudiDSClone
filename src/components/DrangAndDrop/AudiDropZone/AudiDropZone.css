@@ -1,0 +1,95 @@
+.AudiDropzoneWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'AudiType';
+}
+.AudiDropzoneDragger{
+    border: 1px dashed rgba(0, 0, 0, 0.15);
+    height: 8rem;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.AudiDropzoneWrapper:hover{
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.AudiDropzoneFiles{
+    display: flex;
+    flex-direction: column;
+}
+
+.AudiDropzoneAcceptedUl{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    height: 10rem;
+    gap: 1rem;
+}
+
+.AudiDropzoneAcceptedLi{
+    width: 10rem;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.AudiDropzoneAcceptedImg{
+    width: 10rem;
+    height: 10rem;
+}
+
+.AudiDropzoneAcceptedBtn{
+    all: unset;
+    position: absolute;
+    top: 0;
+    right:0;
+    transform: translateX(50%) translateY(-50%);
+    cursor: pointer;
+}
+
+.AudiDropzoneRejectedUl{
+    /* padding: 0; */
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    height: 10rem;
+    gap: .5rem;
+}
+
+.AudiDropzoneRejectedLi{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: circle;
+    position: relative;
+    height: fit-content;
+}
+
+.AudiDropzoneRejectedLiName{
+    color: rgba(0, 0, 0, 0.7);
+}
+.AudiDropzoneRejectedLiError{
+    color: rgba(255, 0, 0, 0.5);
+    font-size: .8rem;
+}
+
+.AudiDropzoneRejectedLiRemove{
+    all: unset;
+    width:fit-content;
+    height: 100%;
+    border: 1px solid black;
+    padding: 0 .5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.AudiDropzoneRejectedLiRemove:hover{
+    opacity: 0.7;
+}
