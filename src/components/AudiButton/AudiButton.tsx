@@ -1,7 +1,7 @@
 import './AudiButton.css'
 import github from '../../stories/assets/github.svg'
 
-interface AudiButtonProps{
+interface AudiButtonInterface{
     buttonType: 'primary' | 'secondary' | 'text' | 'stretched',
     text?: string,
     showIcon?: boolean,
@@ -11,7 +11,7 @@ export const AudiButton = ({
     buttonType,
     text,
     showIcon
-} : AudiButtonProps) =>{
+} : AudiButtonInterface) =>{
     return(
         <button
         type='button'
