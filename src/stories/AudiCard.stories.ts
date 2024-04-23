@@ -31,7 +31,6 @@ export const Card: Story = {
     }
 }
 
-
 export const Interactions: Story = {
     args:{
         headline:'Headline',

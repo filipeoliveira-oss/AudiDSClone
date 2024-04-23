@@ -1,0 +1,53 @@
+.DraggableListSection{
+    background-color: #ffffff;
+    width: 25rem;
+    height: fit-content;
+    padding: .25rem;
+    user-select: none;
+}
+
+.DraggableListArticle{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+}
+
+.DraggableListItem{
+    background-color: rgba(0,0,0,.1);
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'AudiType';
+    min-height: 2rem;
+    padding: .5rem 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(0,0,0,.8);
+    cursor: move;
+    transition: background .15s linear,color .15s linear;
+    position: relative;
+    word-break: break-all;
+}
+
+.DraggableListSpan{
+    width: 80%;
+}
+
+.DraggableListItem:hover{
+    color: #000;
+    background: rgba(0,0,0,.15);
+}
+
+.DraggableListIcon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+.DraggableListItem:hover > .DraggableListIcon{
+    display: block;
+}
