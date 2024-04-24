@@ -3,14 +3,12 @@ h2, p{
 }
 
 .AudiCard{
-    /* min-width: 30rem; */
     width: 60vw;
     height: fit-content;
 
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
-    /* flex: 1 1 auto; */
     color: #333;
     gap: 1rem;
     font-family: 'AudiType';

@@ -48,10 +48,6 @@
     display: inline-flex;
 }
 
-/* CRIAR EFEITO DE HOVER */
-.AudiButton-text:hover > span {
-    /* transform: translateX(50px); */
-}
 
 .AudiButtonIcon{
     all: unset;
