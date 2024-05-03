@@ -13,4 +13,4 @@ Access the link to if you wish to only see the [Storybook](https://audi-ds-clone
 <br/>
 <br/>
 
-###### Please, be aware that this project is still under development
+###### Please, be aware that this project is still under development!
