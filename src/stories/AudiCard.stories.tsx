@@ -27,14 +27,14 @@ type Story = StoryObj<typeof meta>
 export const Card: Story = {
     args:{
         headline:'Headline',
-        text:'And, now Your Highness, we will discuss the location of your hidden Rebel base.'
+        text:<span>And, now Your Highness, we will discuss the location of your hidden Rebel base.</span>
     }
 }
 
 export const Interactions: Story = {
     args:{
         headline:'Headline',
-        text:'I\'m a card with interactions',
+        text:<span>I\'m a card with interactions</span>,
         footer: AudiCardFooter
     }
 }
