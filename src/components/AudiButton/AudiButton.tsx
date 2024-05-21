@@ -20,7 +20,7 @@ export const AudiButton = ({
     const [x, setx] = useState(0)
     const [y, sety] = useState(0)
 
-    function clickbt(e:any){
+    function clickbt(e:any, click: any){
         let target = e.currentTarget || e.srcElement
         let rect = target.getBoundingClientRect(),
         offsetX = e.clientX - rect.left,
@@ -37,6 +37,9 @@ export const AudiButton = ({
             el?.classList.add('responseButtonEffect-disabled')
         }, 500);
 
+        if(click){
+            click
+        }
     }
 
     return(
@@ -44,7 +47,7 @@ export const AudiButton = ({
             <button
             type='button'
             className={` ${showIcon ? 'AudiButtonIcon' : `AudiButton AudiButton-${buttonType}`} `}
-            onClick={(e) => clickbt(e)}
+            onClick={(e) => clickbt(e, click)}
             
             >
                 {showIcon ? 
