@@ -1,0 +1,79 @@
+.ToastContainer{
+    height: 5rem;
+    width: 8rem;
+}
+
+.Toast{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    min-height: 8rem;
+    height: fit-content;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    padding:.5rem;
+    font-family: 'AudiType', sans-serif;
+    animation-name: showToast;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.closedToast{
+    display: none;
+}
+
+.ToastClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.ToastClosing{
+    
+    animation-name: hideToast;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.toast-theme-dark{
+    color: #f2f2f2;
+    background-color: #333333;
+}
+
+.toast-theme-light{
+    color: #333333;
+    background-color: #fff;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+}
+
+.toast-theme-light > .ToastClose{
+    color: #333333;
+}
+
+.toast-theme-dark > .ToastClose{
+    color: #f2f2f2;
+}
+
+.ToastText{
+    width: 90%;
+}
+@keyframes showToast {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes hideToast {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
