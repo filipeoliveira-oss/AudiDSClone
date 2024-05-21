@@ -5,17 +5,20 @@ interface AudiButtonInterface{
     buttonType: 'primary' | 'secondary' | 'text' | 'stretched',
     text?: string,
     showIcon?: boolean,
+    click?: () => void
 }
 
 export const AudiButton = ({
     buttonType,
     text,
-    showIcon
+    showIcon,
+    click
 } : AudiButtonInterface) =>{
     return(
         <button
         type='button'
         className={` ${showIcon ? 'AudiButtonIcon' : `AudiButton AudiButton-${buttonType}`} `}
+        onClick={click}
         >
             {showIcon ? 
                 <span className='buttonIconWrapper'>
