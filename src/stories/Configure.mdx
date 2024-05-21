@@ -213,7 +213,7 @@ import Toast from '../components/Notifications/Toast/Toas';
                     </div>
 
                     <div class="componentShowContainer">
-                        <Loader loadTime={10000}/>
+                        <Loader loadTime={10000} inLoop={true}/>
                     </div>
                 </div>
 
@@ -224,7 +224,7 @@ import Toast from '../components/Notifications/Toast/Toas';
                     </div>
 
                     <div class="componentShowContainer">
-                        <ProgressBar loadtime= {10000}/>
+                        <ProgressBar loadtime= {10000} inLoop={true}/>
                     </div>
                 </div>
 
@@ -306,7 +306,7 @@ import Toast from '../components/Notifications/Toast/Toas';
             display: flex;
             width: 90%;
             height: fit-content;
-            
+            gap:1rem;
             flex-direction: column;
         }
         
@@ -348,6 +348,8 @@ import Toast from '../components/Notifications/Toast/Toas';
             justify-content: center;
             align-items: center;
             margin-top: 2rem;
+            padding-top:.5rem;
+            padding-bottom:.5rem;
         }
         `}
     </style>
