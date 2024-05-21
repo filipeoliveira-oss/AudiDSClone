@@ -1,9 +1,9 @@
-import { CSSProperties, ReactNode } from 'react'
+import React, { CSSProperties, ReactNode } from 'react'
 import './AudiCard.css'
 
 interface AudiCardInterface{
     headline: string,
-    text:string,
+    text:React.ReactNode,
     footer?: ReactNode,
     background?:  string,
     fontColor?: string
