@@ -1,0 +1,12 @@
+<svg class="aui-spinner__svg" viewBox="-46 -46 92 92">
+    <g class="aui-spinner__group">
+        <g class="aui-spinner__group-base">
+            <circle class="aui-spinner__path" cx="0" cy="0" r="44.5"></circle>
+        </g>
+        <g class="aui-spinner__group-progress">
+            <circle class="aui-spinner__path aui-spinner__path--progress" cx="0" cy="0" r="44.5"
+                transform="rotate(-90)"
+                style="stroke-opacity: 1; stroke-dasharray: 2.79602, 279.602;"></circle>
+        </g>
+    </g>
+</svg>
