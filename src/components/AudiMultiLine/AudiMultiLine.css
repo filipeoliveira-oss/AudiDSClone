@@ -1,6 +1,6 @@
 .AudiMultiLineContainer{
     height: 10rem;
-    width: 60vw;
+    width: 90%;
     position: relative;
     border: 1px solid #333;
     padding-top: 0.4375em;
@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    min-height: 2.7rem;
+    height: 80%;
     font-family: 'AudiType';
     font-size: inherit;
     font-weight: 400;
@@ -36,6 +36,7 @@
     left: 0;
     width: 100%;
     color: #333;
+    background-color: #f0f0f0;
     /* font-size: .75rem; */
     font-weight: 400;
     text-align: left;
@@ -44,11 +45,15 @@
     text-overflow: ellipsis;
     transition-property: top,font-size,color,opacity;
     pointer-events: none;
-    
-    transition-duration: 2000ms;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.75,.02,.5,1);
 }
 
 .AudiMultiLineTextArea:focus ~ .AudiMultiLineLabel{
+    font-size: 0.75rem;
+}
+.AudiMultiLineTextArea:not(:placeholder-shown) ~ .AudiMultiLineLabel{
     font-size: 0.75rem;
 }

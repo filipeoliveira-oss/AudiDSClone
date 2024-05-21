@@ -2,13 +2,14 @@ import './ProgressBar.css'
 import { useState, useEffect } from 'react'
 
 interface ProgressBarInterface{
-    loadtime: number
+    loadtime: number,
+    inLoop?:Boolean
 }
 
-export default function ProgressBar({loadtime}: ProgressBarInterface){
+export default function ProgressBar({loadtime,inLoop}: ProgressBarInterface){
     const [curr, setCurr] = useState(0)
 
-    useEffect(() =>{
+    const intervalLoad = () =>{
         const maxVal = 100
         const intervalTime = loadtime / maxVal;
         let currentValue = 0
@@ -23,6 +24,17 @@ export default function ProgressBar({loadtime}: ProgressBarInterface){
         }, intervalTime)
 
         return () => clearInterval(intervalId)
+    } 
+
+
+    useEffect(() =>{
+       intervalLoad()
+
+       if(inLoop){
+        setInterval(() =>{
+            intervalLoad()
+        },loadtime + 3000)
+       }
     },[])
 
 

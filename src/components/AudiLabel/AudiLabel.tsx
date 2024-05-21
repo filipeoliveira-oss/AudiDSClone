@@ -21,8 +21,8 @@ export const AudiLabel = ({
                     <div className='AudiLabelSearch'>
                         <img src={searchIcon} alt="Search Icon" className='AudiLabelSearchImg'/>
                         <div className='AudiLabelSearchInputWrapper'>
-                            <input type="text" name="input" id="input" className='AudiLabelSearchInput' placeholder=' '/>
-                            <label htmlFor="input" className='AudiLabelSearchLabel'>{label}</label>
+                            <input type="text" name="search" id="search" className='AudiLabelSearchInput' placeholder=' '/>
+                            <label htmlFor="search" className='AudiLabelSearchLabel'>{label}</label>
                         </div>
                     </div>
                     <span className='AudiLabelAuxLine'></span>

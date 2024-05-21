@@ -4,7 +4,7 @@
 }
 
 .Toast{
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     min-height: 8rem;

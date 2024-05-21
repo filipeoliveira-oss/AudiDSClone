@@ -1,17 +1,19 @@
+
 import "./Loader.css";
 import { useEffect, useState } from "react";
 
 interface loaderInterface{
-    loadTime: number
+    loadTime: number,
+    inLoop?:Boolean
 }
 
 
-export default function Loader({loadTime} : loaderInterface) {
+export default function Loader({loadTime, inLoop} : loaderInterface) {
 
     const [ loaded, setLoaded] = useState<number>(0)
     const [loadPercent, setLoadPercent] = useState(0)
 
-    useEffect(() =>{
+    const intervalLoad = () =>{
         const maxVal = 280;
         const intervalTime = loadTime / maxVal;
         let currentValue = 0;
@@ -24,6 +26,16 @@ export default function Loader({loadTime} : loaderInterface) {
                 currentValue++
             }
         },intervalTime)
+    }
+
+    useEffect(() =>{
+        intervalLoad()
+
+        if(inLoop){
+            setInterval(() =>{
+                intervalLoad()
+            },loadTime + 3000)
+        }
     },[])
 
     useEffect(() =>{
