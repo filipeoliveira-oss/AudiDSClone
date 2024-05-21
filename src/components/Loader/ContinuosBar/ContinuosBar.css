@@ -1,0 +1,13 @@
+.ContinuosBarContainer{
+    display: flex;
+    position: relative;
+    height: .25rem;
+    width: 80rem;
+    background-color: #E5E5E5;
+}
+.ContinuosBarLoaded{
+    position: absolute;
+    height: 100%;
+    background-color: #ff0000;
+    width: 30%;
+}
