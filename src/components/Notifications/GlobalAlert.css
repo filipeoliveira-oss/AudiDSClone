@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'AudiType';
+    src: url('../../assets/fonts/AudiType/auditype_extendednormal.ttf');
+}
+
+.GlobalAlertContainer{
+    display: block;
+}
+
+.GlobalAlertPopUp > h3{
+    all: unset;
+    font-size: 1rem;
+    font-family: 'AudiType', sans-serif;
+}
+
+.GlobalAlertPopUp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2rem);
+    height: 10rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-inline: 1rem;
+    overflow: hidden;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+    animation: showPopUp;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.GlobalAlertPopUpActions{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: auto;
+    gap: 1rem;
+}
+
+.popUpClosed{
+    display: none;
+}
+
+.popUpClosing{
+    animation: hidePopUp;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showPopUp {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes hidePopUp {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
