@@ -9,8 +9,6 @@ To run this project, you first need to:
 
 In Storybook document, you will find all the components available so far
 
-Access the link to if you wish to only see the [Storybook](https://audi-ds-clone-pyiiavawx-filipeoliveiraoss-projects.vercel.app/?path=/docs/configure-your-project--docs)
+Access the link to if you wish to only see the [Storybook](https://audi-ds-clone.vercel.app/?path=/docs/audi-design-system-replica--docs)
 <br/>
 <br/>
-
-###### Please, be aware that this project is still under development!
