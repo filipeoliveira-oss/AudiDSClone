@@ -40,7 +40,7 @@ export const AudiDraggableList =({
                             >
                             {list.map((item, index) =>{
                                 return(
-                                    <Draggable draggableId={index.toString()} index={index}>
+                                    <Draggable draggableId={index.toString()} index={index} key={index}>
                                         {(provided) =>(
                                             <div 
                                                 className='DraggableListItem' 

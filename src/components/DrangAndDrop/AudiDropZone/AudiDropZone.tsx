@@ -1,5 +1,5 @@
 import './AudiDropZone.css'
-import React, {useCallback, useState} from 'react'
+import {useCallback, useState} from 'react'
 import {useDropzone} from 'react-dropzone'
 import close from '../../../stories/assets/close.svg'
 
@@ -38,7 +38,7 @@ export const AudiDropZone = () =>{
     }, [])
 
 
-    const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop, accept:{
+    const {getRootProps, getInputProps} = useDropzone({onDrop, accept:{
         'image/*':[]
         },
         maxSize: 1024 * 5000,

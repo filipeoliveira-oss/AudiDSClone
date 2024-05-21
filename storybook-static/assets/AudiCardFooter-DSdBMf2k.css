@@ -1,0 +1,1 @@
+h2,p{all:unset}.AudiCard{width:90%;height:fit-content;padding:1.25rem;display:flex;flex-direction:column;color:#333;gap:1rem;font-family:AudiType;background-color:#fff}.AudiCard>h2{text-transform:capitalize}.AudiCard>p{line-height:28px}.AudiCardInteractions{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.5rem;grid-auto-rows:1fr}

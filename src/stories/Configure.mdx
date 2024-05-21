@@ -14,8 +14,8 @@ import Toast from '../components/Notifications/Toast/Toas';
 
 <Meta title="Audi Design System Replica" />
 
-    <div class="doc-container">
-            <div class="doc-info-container">
+    <div className="doc-container">
+            <div className="doc-info-container">
                 <h1>Audi Design System Replica</h1>
     
                 <span>
@@ -31,239 +31,239 @@ import Toast from '../components/Notifications/Toast/Toas';
                 </span>
             </div>
 
-            <div class="componentContainer">
-                <div class="componentInfo">
-                    <h1 class="componentname">Buttons</h1>
+            <div className="componentContainer">
+                <div className="componentInfo">
+                    <h1 className="componentname">Buttons</h1>
                     <span>As described by Audi, "A button can be used to show the user’s choice of options for actions and assign these to a clear hierarchy. The target page to be accessed or the action to be triggered is shown on the buttons by means of a label in Audi Type Wide Normal or else by an icon, or by a combination of the two[...]"</span>
                 </div>
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Primary Button</h1>
                         <span>The filled-out primary button is used for the most important action on a page or in a view.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiButton buttonType='primary'/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Secondary Button</h1>
                         <span>The transparent secondary button with a thin frame is used for subordinate actions.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiButton buttonType='secondary'/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Text Button</h1>
                         <span>The text button is applied as a subtle call to action. The standard variant is a combination of text and arrow.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiButton buttonType='text'/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>System Icon Button</h1>
                         <span>System icon buttons are used to trigger classic system interactions (e.g. save, print or download ...) They contain a system icon. The system icon button is transparent and should preferably be used without a label.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiButton buttonType='primary' showIcon={true}/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Streteched Button</h1>
                         <span>the stretched and sticky primary button can be used like the primary button for the most important function of a page or view.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiButton buttonType='stretched'/>
                     </div>
                 </div>
             </div>
 
-            <div class="componentContainer">
-                <div class="componentInfo">
-                    <h1 class="componentname">Cards</h1>
+            <div className="componentContainer">
+                <div className="componentInfo">
+                    <h1 className="componentname">Cards</h1>
                     <span>As described by Audi, "Cards contain elements and functions on a single topic and can be used as teasers for further content. They optionally show text, icons, an image or a video, links and triggers – either alone or in combination. The format, size and layout of a card are flexible within the layout structure."</span>
                 </div>
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Card as an Interactive Block</h1>
                         <span>An entire card can be created as an interactive block if it does not contain any other interactive elements.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiCard headline='Headline' text={<span>And, now Your Highness, we will discuss the location of your hidden Rebel base.</span>}/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Card with Interactions</h1>
                         <span>In addition to text and images, cards can contain interactive elements such as buttons, icon buttons and text links.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiCard headline='Headline' text={<span>I'm a card with interactions.</span>} footer={AudiCardFooter}/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Card with Background Color</h1>
                         <span>Visuals are bled to the edge in cards. For improved readability of the content items placed on them, the image can be darkened with a transparent area by up to 30%.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiCard headline='Headline' text={<span>You can change the background color and the font color using the properties</span>} footer={AudiCardFooter} background='#fff000' fontColor='#0000ff'/>
                     </div>
                 </div>
             </div>
 
-            <div class="componentContainer">
-                <div class="componentInfo">
-                    <h1 class="componentname">Drag & Drop</h1>
+            <div className="componentContainer">
+                <div className="componentInfo">
+                    <h1 className="componentname">Drag & Drop</h1>
                     <span>As described by Audi, "The Drag & Drop mechanism enables the user to shift elements, change a sorting order or put an element in a particular place."</span>
                 </div>
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Draggable List</h1>
                         <span>Elements of the sortable list can be shifted in terms of their positioning relative to each other. When an entry is moved, possible destinations are shown graphically.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiDraggableList list={['item 1','Item2','Item3','Item4','Item5']}/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Dropzone</h1>
                         <span>The dropzone allows files to be uploaded intuitively. When shifting a file by means of Drag & Drop, the area in which it can be deposited can be graphically highlighted.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiDropZone/>
                     </div>
                 </div>
                
             </div>
 
-            <div class="componentContainer">
-                <div class="componentInfo">
-                    <h1 class="componentname">Input Fields</h1>
+            <div className="componentContainer">
+                <div className="componentInfo">
+                    <h1 className="componentname">Input Fields</h1>
                     <span>As described by Audi, "Forms are a particularly important interface between the user and Audi applications. They often appear at critical points in the user journey. For this reason, forms should be designed so that they can be easily understood and as few information points should be requested as possible."</span>
                 </div>
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Text Field</h1>
                         <span>Text fields consist of a label and a line. They can vary in width. When the user activates a text field, the label moves upwards, is reduced in size and leaves space for entry.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiLabel optional={true} label='Label' placeholder='If the customer doesn’t understand the label itself or is just unsure of its meaning, an additional description can help squash any uncertainty.'/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Search Field</h1>
                         <span>In a search field, a search icon is combined with a label. Unlike a standard text field, the label is overwritten on entry and does not move upwards.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiLabel search={true} label='Label' placeholder='If the customer doesn’t understand the label itself or is just unsure of its meaning, an additional description can help squash any uncertainty.'/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Multiple-line Text Field</h1>
                         <span>Multiple-line text fields can hold any amount of text and in doing so grow in height ahead of the user’s entries.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <AudiMultiLine label='Label' placeholder='If the customer doesn’t understand the label itself or is just unsure of its meaning, an additional description can help squash any uncertainty.'/>
                     </div>
                 </div>
                
             </div>
 
-            <div class="componentContainer">
-                <div class="componentInfo">
-                    <h1 class="componentname">Loader</h1>
+            <div className="componentContainer">
+                <div className="componentInfo">
+                    <h1 className="componentname">Loader</h1>
                     <span>As described by Audi, "Loaders inform the user of loading or computing processes being carried out by the system. The progress can either be displayed with specific details or communicated as undefined by means of a repeated animation."</span>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Spinners</h1>
                         <span>The spinner is used when the system’s loading progress can be determined.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <Loader loadTime={10000} inLoop={true}/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Progress Bar</h1>
                         <span>The progress bar is used in individual cases when the content and the definable loading progress of the system are to be displayed in a view at the same time.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <ProgressBar loadtime= {10000} inLoop={true}/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Continuous Progress Bar</h1>
                         <span>The continuous progress bar is used in individual cases when the content and the indefinable loading progress of the system are to be displayed in a view at the same time.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <ContinuosBar/>
                     </div>
                 </div>
             </div>
 
-            <div class="componentContainer">
-                <div class="componentInfo">
-                    <h1 class="componentname">Notifications</h1>
+            <div className="componentContainer">
+                <div className="componentInfo">
+                    <h1 className="componentname">Notifications</h1>
                     <span>As described by Audi, "Notifications draw the user’s attention to warnings or important information such as status changes. They can be assigned to specific elements or be valid globally. The nature and urgency of the information are made clear via the shape, colour and position."</span>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Global Alert</h1>
                         <span>Global alerts extend across the entire viewport width and can contain text, icons, images and interactive elements such as buttons or system icon buttons.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <GlobalAlert buttonText='Global Alert' cancelButtonText='Cancel' confirmButtonText='Confirm and close' text={<h3><strong>The Death Star</strong> plans are not in the main computer. Where are those transmissions you intercepted? What have you done with those plans? We intercepted no transmissions.</h3>}/>
                     </div>
                 </div>
 
-                <div class="componentDescriptionContainer">
-                    <div class="componentDescription">
+                <div className="componentDescriptionContainer">
+                    <div className="componentDescription">
                         <h1>Toast Alert</h1>
                         <span>Toast notifications appear in the upper or lower corner of the right-hand viewport margin. They are particularly suitable for time-sensitive live notifications.</span>
                     </div>
 
-                    <div class="componentShowContainer">
+                    <div className="componentShowContainer">
                         <Toast buttonType='primary' buttonText='Show Toast' toastTheme='dark' duration={10000}toastText='The Death Star plans are not in the main computer. Where are those transmissions you intercepted? What have you done with those plans? We intercepted no transmissions.'/>
                     </div>
                 </div>
@@ -287,7 +287,7 @@ import Toast from '../components/Notifications/Toast/Toas';
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
-            
+            font-family: 'AudiType', sans-serif;
         }
         a{
           all:unset;
